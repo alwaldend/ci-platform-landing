@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<meta name="generator" content="Hugo 0.165.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ci platform</title>
+    
+    <meta name="description" content="Ci platform" />
+     
+    <meta name="github-repo" content="https://github.com/alwaldend/src" />
+      
+    <link rel="stylesheet" href="/scss/landing.min.757a78e91e368eeac2f0cb4833153359a2f027c8e1ec3cf51681f3f623b018da.css" />
+     
+  </head>
+  <body>
+    <header class="landing-topbar">
+      <a class="landing-brand" href="/">Ci Platform</a>
+      <nav class="landing-nav" aria-label="Project links">
+        
+        <a href="https://alwaldend.com/docs/projects/ci_platform/">Docs</a>
+        
+        <a href="https://github.com/alwaldend/src">Github</a>
+        
+      </nav>
+    </header>
+    <main class="landing-container">
+      <div class="landing-header">
+        <h1>Ci platform</h1>
+        <div class="btn-group" role="group" aria-label="Project links">
+          
+          <a class="btn btn-outline-primary" href="https://alwaldend.com/docs/projects/ci_platform/">Docs</a>
+          
+          <a class="btn btn-outline-primary" href="https://github.com/alwaldend/src">Github</a>
+          
+        </div>
+      </div>
+      
+      <p class="landing-description">Ci platform</p>
+       
+      <p class="landing-meta">Built with go, js.</p>
+      
+      <div class="landing-readme"><p>CI platform SPA</p>
+<h2 id="links">Links</h2>
+<ul>
+<li>Source code: <a
+  href="https://github.com/alwaldend/src/tree/master/projects/ci_platform"
+  
+  >https://github.com/alwaldend/src/tree/master/projects/ci_platform</a
+>
+</li>
+</ul>
+<h2 id="features">Features</h2>
+<ul>
+<li><a
+  href="https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html"
+  
+  >Clean architecture</a
+>
+</li>
+<li>Backend: Golang, Gorm, Fiber, Hcl, Postgresql</li>
+<li>Frontend: SPA, VueJS with PrimeVue</li>
+</ul>
+<h2 id="arch">Arch</h2>
+<p><img
+  src="https://raw.githubusercontent.com/alwaldend/src/master/projects/ci_platform/arch.drawio.svg"
+  alt="Arch"
+  
+  loading="lazy"
+/>
+</p>
+<h2 id="layout">Layout</h2>
+<pre tabindex="0"><code>ci_platform
+├── api [Interface Adapters]
+│   ├── controller
+│   ├── middleware
+│   └── presenter
+├── cmd (CLI interface)
+├── docs (OpenAPI Specification and other documentation)
+│   └── diagrams
+├── entity [Enterprise Business Rules]
+├── infrastructure [Frameworks and Drivers]
+│   ├── access
+│   ├── branch
+│   ├── config
+│   ├── job
+│   ├── jwt
+│   ├── lifecycle
+│   ├── pipeline
+│   ├── pool
+│   ├── project
+│   ├── schedule
+│   ├── session
+│   └── user
+├── pkg (Support packages)
+│   └── error
+└── usecase [Application Business Rules]
+│   ├── access
+│   ├── branch
+│   ├── job
+│   ├── jwt
+│   ├── lifecycle
+│   ├── pipeline
+│   ├── pool
+│   ├── project
+│   ├── schedule
+│   ├── session
+│   └── user
+└── web (Web interface)
+</code></pre><h2 id="resources">Resources</h2>
+<ul>
+<li>
+<p>architecture</p>
+<ul>
+<li><a
+  href="https://gitlab.com/redhatdemocentral/portfolio-architecture-examples"
+  
+  >https://gitlab.com/redhatdemocentral/portfolio-architecture-examples</a
+>
+
+<a
+  href="https://redhatdemocentral.gitlab.io/portfolio-architecture-tooling/index.html?#/portfolio-architecture-examples/projects/retail-data-framework.drawio"
+  
+  >https://redhatdemocentral.gitlab.io/portfolio-architecture-tooling/index.html?#/portfolio-architecture-examples/projects/retail-data-framework.drawio</a
+>
+</li>
+<li><a
+  href="https://medium.com/wesionary-team/a-clean-architecture-for-web-application-in-go-lang-4b802dd130bb"
+  
+  >https://medium.com/wesionary-team/a-clean-architecture-for-web-application-in-go-lang-4b802dd130bb</a
+>
+</li>
+<li><a
+  href="https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html"
+  
+  >https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html</a
+>
+</li>
+<li><a
+  href="https://eltonminetto.dev/en/post/2020-07-06-clean-architecture-2years-later/"
+  
+  >https://eltonminetto.dev/en/post/2020-07-06-clean-architecture-2years-later/</a
+>
+</li>
+<li><a
+  href="https://manakuro.medium.com/clean-architecture-with-go-bce409427d31"
+  
+  >https://manakuro.medium.com/clean-architecture-with-go-bce409427d31</a
+>
+</li>
+<li><a
+  href="https://github.com/eminetto/clean-architecture-go"
+  
+  >https://github.com/eminetto/clean-architecture-go</a
+>
+</li>
+<li><a
+  href="https://eltonminetto.dev/en/post/2018-03-05-clean-architecture-using-go/"
+  
+  >https://eltonminetto.dev/en/post/2018-03-05-clean-architecture-using-go/</a
+>
+</li>
+<li><a
+  href="https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html"
+  
+  >https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html</a
+>
+</li>
+<li><a
+  href="https://proandroiddev.com/why-you-need-use-cases-interactors-142e8a6fe576"
+  
+  >https://proandroiddev.com/why-you-need-use-cases-interactors-142e8a6fe576</a
+>
+</li>
+<li><a
+  href="https://itnext.io/golang-and-clean-architecture-19ae9aae5683"
+  
+  >https://itnext.io/golang-and-clean-architecture-19ae9aae5683</a
+>
+</li>
+<li><a
+  href="https://hackernoon.com/golang-clean-archithecture-efd6d7c43047"
+  
+  >https://hackernoon.com/golang-clean-archithecture-efd6d7c43047</a
+>
+</li>
+</ul>
+</li>
+<li>
+<p>golang</p>
+<ul>
+<li><a
+  href="https://www.rudderstack.com/blog/implementing-graceful-shutdown-in-go"
+  
+  >https://www.rudderstack.com/blog/implementing-graceful-shutdown-in-go</a
+>
+</li>
+<li><a
+  href="https://github.com/gofiber/recipes"
+  
+  >https://github.com/gofiber/recipes</a
+>
+</li>
+<li><a
+  href="https://ldej.nl/post/generating-swagger-docs-from-go/"
+  
+  >https://ldej.nl/post/generating-swagger-docs-from-go/</a
+>
+</li>
+<li><a
+  href="https://github.com/hashicorp/hcl"
+  
+  >https://github.com/hashicorp/hcl</a
+>
+</li>
+<li><a
+  href="https://github.com/gothinkster/golang-gin-realworld-example-app"
+  
+  >https://github.com/gothinkster/golang-gin-realworld-example-app</a
+>
+</li>
+<li><a
+  href="https://github.com/alpody/golang-fiber-realworld-example-app"
+  
+  >https://github.com/alpody/golang-fiber-realworld-example-app</a
+>
+</li>
+<li><a
+  href="https://dev.to/aryaprakasa/serving-single-page-application-in-a-single-binary-file-with-go-12ij"
+  
+  >https://dev.to/aryaprakasa/serving-single-page-application-in-a-single-binary-file-with-go-12ij</a
+>
+</li>
+<li><a
+  href="https://codesahara.com/blog/golang-job-queue-with-redis-streams/"
+  
+  >https://codesahara.com/blog/golang-job-queue-with-redis-streams/</a
+>
+</li>
+<li><a
+  href="https://gorm.io/"
+  
+  >https://gorm.io/</a
+>
+</li>
+<li><a
+  href="https://docs.gofiber.io/"
+  
+  >https://docs.gofiber.io/</a
+>
+</li>
+<li><a
+  href="https://github.com/thomasvvugt/fiber-boilerplate"
+  
+  >https://github.com/thomasvvugt/fiber-boilerplate</a
+>
+</li>
+<li><a
+  href="https://github.com/ansible-semaphore/semaphore"
+  
+  >https://github.com/ansible-semaphore/semaphore</a
+>
+</li>
+<li><a
+  href="https://github.com/spf13/cobra"
+  
+  >https://github.com/spf13/cobra</a
+>
+</li>
+<li><a
+  href="https://github.com/spf13/viper"
+  
+  >https://github.com/spf13/viper</a
+>
+</li>
+</ul>
+</li>
+<li>
+<p>security</p>
+<ul>
+<li><a
+  href="https://cheatsheetseries.owasp.org/cheatsheets/"
+  
+  >https://cheatsheetseries.owasp.org/cheatsheets/</a
+>
+</li>
+<li><a
+  href="https://www.alexedwards.net/blog/how-to-hash-and-verify-passwords-with-argon2-in-go"
+  
+  >https://www.alexedwards.net/blog/how-to-hash-and-verify-passwords-with-argon2-in-go</a
+>
+</li>
+</ul>
+</li>
+<li>
+<p>frontend</p>
+<ul>
+<li><a
+  href="https://github.com/primefaces/sakai-vue"
+  
+  >https://github.com/primefaces/sakai-vue</a
+>
+</li>
+<li><a
+  href="https://github.com/primefaces/primevue"
+  
+  >https://github.com/primefaces/primevue</a
+>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+    </main>
+    <footer class="landing-footer">
+      <p>Generated from the project README.</p>
+    </footer>
+  </body>
+</html>
